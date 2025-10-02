@@ -1,11 +1,13 @@
 public class App {
     public static void main(String[] args) {
 
-        veiculo veiculo1 = new veiculo("Veiculo1", "2019", "ModeloZ", "Azul", "JKL3456", false);
-        veiculo1.salvar();
+        veiculo veiculo1 = new veiculo("Veículo1", "2019", "ModeloA", "Azul", "DEF5678", true);
+        veiculo1.salvar();  
         veiculo1.alterar();
         veiculo1.excluir();
         veiculo1.pesquisa();
+
+
 
         carro carro1 = new carro("Carro1", "2020", "ModeloX", "Vermelho", "ABC1234", true, "Gasolina", "6", "Ar Condicionado, Direção Hidráulica");
         carro1.salvar();
@@ -19,10 +21,22 @@ public class App {
         moto1.excluir();
         moto1.pesquisa();
 
+        categoria categoria1 = new categoria("Categoria A");
+        categoria1 = new categoria("Categoria B");  
+        categoria1 = new categoria("Categoria C");
 
-
+        
+        garagem garagem1 = new garagem("Garagem Central", "Rua Principal, 123");
+        garagem1 = new garagem("Garagem Secundária", "Avenida Secundária, 456");
+        garagem1 = new garagem("Garagem Lateral", "Travessa Lateral, 789");
                  
-    }
+          
+
+        carro1.exibirInformacoes();
+}
+
+     
+
 }
 
     

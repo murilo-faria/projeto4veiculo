@@ -12,4 +12,8 @@ public class categoria {
 
         }
 
+            public String getDescricao() {
+                return descrição;
+            }
+
 }

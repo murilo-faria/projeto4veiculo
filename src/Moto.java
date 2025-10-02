@@ -35,6 +35,21 @@ public class Moto extends veiculo {
         System.out.println("Salvando moto ------<>");
         
     }
+        public void exibirInformacoes() {
+            System.out.println("Nome: " + getNome());
+            System.out.println("Ano: " + getAno());
+            System.out.println("Modelo: " + getModelo());
+            System.out.println("Cor: " + getCor());
+            System.out.println("Placa: " + getPlaca());
+            System.out.println("Único dono: " + isUnicoDono());
+            System.out.println("Cilindradas: " + this.cilindradas);
+            if (getCategoria() != null) {
+                System.out.println("Categoria: " + getCategoria().getDescricao());
+            }
+            if (getGaragem() != null) {
+                System.out.println("Garagem: " + getGaragem().getNome() + ", Cidade: " + getGaragem().getCidade());
+            }
+        }
 
     
 

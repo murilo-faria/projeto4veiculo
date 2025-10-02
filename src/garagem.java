@@ -15,6 +15,13 @@ public class garagem {
 
     }
 
+        public String getNome() {
+            return nome;
+        }
+        public String getCidade() {
+            return cidade;
+        }
+
     
 
 }

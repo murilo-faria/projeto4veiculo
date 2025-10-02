@@ -6,6 +6,8 @@ public class veiculo {
     private String cor;
     private String placa;
     private boolean unicoDono;
+    private categoria categoria;
+    private garagem garagem;
 
 
     public veiculo(String nome, String ano, String modelo, String cor, String placa, boolean unicoDono) {
@@ -35,5 +37,35 @@ public class veiculo {
     public void pesquisa () {
         System.out.println("Veículo pesquisado com sucesso!");
     }
+        public String getNome() {
+            return nome;
+        }
+        public String getAno() {
+            return ano;
+        }
+        public String getModelo() {
+            return modelo;
+        }
+        public String getCor() {
+            return cor;
+        }
+        public String getPlaca() {
+            return placa;
+        }
+        public boolean isUnicoDono() {
+            return unicoDono;
+        }
+        public categoria getCategoria() {
+            return categoria;
+        }
+        public void setCategoria(categoria categoria) {
+            this.categoria = categoria;
+        }
+        public garagem getGaragem() {
+            return garagem;
+        }
+        public void setGaragem(garagem garagem) {
+            this.garagem = garagem;
+        }
    
 }
